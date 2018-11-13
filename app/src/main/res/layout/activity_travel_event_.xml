@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#d2cad1"
+    android:layout_height="match_parent"
+    tools:context=".TravelEvent.TravelEvent_Activity">
+
+
+    <TextView
+        android:gravity="center"
+        android:text="Travel Event"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="25sp"
+        android:textColor="#409c99"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <EditText
+        android:id="@+id/travelDestination_id"
+        android:textColor="#030303"
+        android:paddingLeft="5dp"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:hint="Travel Destination"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+    <EditText
+        android:id="@+id/travelEstimatedBudget_id"
+        android:textColor="#030303"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:hint="Estimated Budget"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <EditText
+            android:id="@+id/travelFromDate_id"
+            android:textColor="#030303"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:inputType="date"
+            android:layout_marginLeft="10dp"
+            android:hint="From Date"
+            android:layout_width="250dp"
+            android:layout_height="50dp" />
+
+
+
+        <ImageView
+            android:id="@+id/travelFromDatePicker_id"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_event"
+            android:layout_width="90dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <EditText
+            android:id="@+id/travelToDate_id"
+            android:textColor="#030303"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:inputType="date"
+            android:layout_marginLeft="10dp"
+            android:hint="To Date"
+            android:layout_width="250dp"
+            android:layout_height="50dp" />
+
+
+
+        <ImageView
+            android:id="@+id/travelToDatePicker_id"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_event"
+            android:layout_width="90dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:id="@+id/createEvent_id"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="#d2cad1"
+        android:text="Create Event"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
